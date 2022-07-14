@@ -1,0 +1,18 @@
+import { default as comp } from "../dataset.json";
+
+<nav.breadcrumb aria-label="breadcrumbs">
+    <ul>
+        <li>
+            <a href=(comp.breadcrumbs[0].href)>${comp.breadcrumbs[0].text}</a>
+        </li>
+        <li>
+            <a href=(comp.breadcrumbs[1].href)>${comp.breadcrumbs[1].text}</a>
+        </li>
+
+        <li.is-active>
+            <a href=(comp.breadcrumbs[2].href) aria-current="page">
+                ${comp.breadcrumbs[2].text}
+            </a>
+        </li>
+    </ul>
+</nav>

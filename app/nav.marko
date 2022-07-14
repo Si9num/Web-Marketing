@@ -1,0 +1,16 @@
+import { default as comp } from "../dataset.json";
+
+<nav.navbar role="navigation" aria-label="main navigation">
+
+    <div.navbar-menu#navbarBasicExample>
+        <div.navbar-start>
+            <a.navbar-item href=(comp.nav[0].href)>${comp.nav[0].text}</a>
+
+            <a.navbar-item href=(comp.nav[1].href)>${comp.nav[1].text}</a>
+            <a.navbar-item href=(comp.nav[2].href)>${comp.nav[2].text}</a>
+            <a.navbar-item href=(comp.nav[3].href)>${comp.nav[3].text}</a>
+        </div>
+
+        <div.navbar-end/>
+    </div>
+</nav>

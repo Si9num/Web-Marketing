@@ -1,0 +1,277 @@
+import { default as comp } from "../dataset.json";
+import searchPar from "./searchPar.marko";
+<div.mainCont>
+    <div.search>
+        <div.card>
+            <header.card-header><p.card-header-title>Search</p></header>
+
+            <div.card-content>
+
+                <div.content>
+                    <header.card-header><p.card-header-title>Price</p></header>
+                    <label.checkbox><input type="checkbox"> up to 20000 </label>
+                    <label.checkbox><input type="checkbox"> up to 50000</label>
+                    <label.checkbox><input type="checkbox"> up to 100000</label>
+                </div>
+                <div.content>
+                    <header.card-header><p.card-header-title>Year</p></header>
+                    <label.checkbox><input type="checkbox"> up to 2000 </label>
+                    <label.checkbox><input type="checkbox"> up to 2015</label>
+                    <label.checkbox><input type="checkbox"> up to 2020</label>
+                </div>
+                <div.content>
+                    <header.card-header>
+                        <p.card-header-title>Mileage</p>
+                    </header>
+                    <label.checkbox><input type="checkbox">up to 80000 </label>
+                    <label.checkbox><input type="checkbox"> up to 180000</label>
+                    <label.checkbox><input type="checkbox"> up to 300000</label>
+                </div>
+                <button.button>Search</button>
+            </div>
+        </div>
+    </div>
+    <div.container>
+
+        <div.card>
+            <header.card-header>
+                <p.card-header-title>
+
+                    <a.title.is-6 href=(comp.stock[0].href)>
+                        ${comp.stock[0].title}
+                    </a>
+                </p>
+            </header>
+            <div.card-image>
+
+                <img
+                    src="https://github.com/alexnaidovich/frontend_test_task/blob/master/src/img/1.jpg?raw=true"
+                    alt="Placeholder image"
+                >
+            </div>
+            <div.card-content>
+
+                <div.content>
+                    <p>
+                        Price: ${comp.stock[0].price} ${comp.stock[0].price_currency}
+                    </p>
+                    <p>Make: ${comp.stock[0].make} </p>
+                    <p>Model: ${comp.stock[0].model} </p>
+                    <p>Type: ${comp.stock[0].type} </p>
+                    <p>Year: ${comp.stock[0].year} </p>
+                    <p>
+                        Mileage: ${comp.stock[0].mileage} ${comp.stock[0].mileage_measure}
+                    </p>
+                    <p>
+                        Axle configuration: ${comp.stock[0].axle_configuration}
+                    </p>
+                    <p>
+                        Power: ${comp.stock[0].power} ${comp.stock[0].power_measure}
+                    </p>
+                    <p>Payload: ${comp.stock[0].payload} </p>
+                    <p>Gross weight: ${comp.stock[0].gross_weight} </p>
+                </div>
+            </div>
+        </div>
+        <div.card>
+            <header.card-header>
+                <p.card-header-title>
+
+                    <a.title.is-6 href=(comp.stock[1].href)>
+                        ${comp.stock[1].title}
+                    </a>
+                </p>
+            </header>
+            <div.card-image>
+
+                <img
+                    src="https://github.com/alexnaidovich/frontend_test_task/blob/master/src/img/2.jpg?raw=true"
+                    alt="Placeholder image"
+                >
+            </div>
+            <div.card-content>
+
+                <div.content>
+                    <p>
+                        Price: ${comp.stock[1].price} ${comp.stock[1].price_currency}
+                    </p>
+                    <p>Make: ${comp.stock[1].make} </p>
+                    <p>Model: ${comp.stock[1].model} </p>
+                    <p>Type: ${comp.stock[1].type} </p>
+                    <p>Year: ${comp.stock[1].year} </p>
+                    <p>
+                        Mileage: ${comp.stock[1].mileage} ${comp.stock[1].mileage_measure}
+                    </p>
+                    <p>
+                        Axle configuration: ${comp.stock[1].axle_configuration}
+                    </p>
+                    <p>
+                        Power: ${comp.stock[1].power} ${comp.stock[1].power_measure}
+                    </p>
+                    <p>Payload: ${comp.stock[1].payload} </p>
+                    <p>Gross weight: ${comp.stock[1].gross_weight} </p>
+                </div>
+            </div>
+        </div>
+        <div.card>
+            <header.card-header>
+                <p.card-header-title>
+
+                    <a.title.is-6 href=(comp.stock[2].href)>
+                        ${comp.stock[2].title}
+                    </a>
+                </p>
+            </header>
+            <div.card-image>
+
+                <img
+                    src="https://github.com/alexnaidovich/frontend_test_task/blob/master/src/img/3.jpg?raw=true"
+                    alt="Placeholder image"
+                >
+            </div>
+            <div.card-content>
+
+                <div.content>
+                    <p>
+                        Price: ${comp.stock[2].price} ${comp.stock[2].price_currency}
+                    </p>
+                    <p>Make: ${comp.stock[2].make} </p>
+                    <p>Model: ${comp.stock[2].model} </p>
+                    <p>Type: ${comp.stock[2].type} </p>
+                    <p>Year: ${comp.stock[2].year} </p>
+                    <p>
+                        Mileage: ${comp.stock[2].mileage} ${comp.stock[2].mileage_measure}
+                    </p>
+                    <p>
+                        Axle configuration: ${comp.stock[2].axle_configuration}
+                    </p>
+                    <p>
+                        Power: ${comp.stock[2].power} ${comp.stock[2].power_measure}
+                    </p>
+                    <p>Payload: ${comp.stock[2].payload} </p>
+                    <p>Gross weight: ${comp.stock[2].gross_weight} </p>
+                </div>
+            </div>
+        </div>
+        <div.card>
+            <header.card-header>
+                <p.card-header-title>
+
+                    <a.title.is-6 href=(comp.stock[3].href)>
+                        ${comp.stock[3].title}
+                    </a>
+                </p>
+            </header>
+            <div.card-image>
+
+                <img
+                    src="https://github.com/alexnaidovich/frontend_test_task/blob/master/src/img/4.jpg?raw=true"
+                    alt="Placeholder image"
+                >
+            </div>
+            <div.card-content>
+
+                <div.content>
+                    <p>
+                        Price: ${comp.stock[3].price} ${comp.stock[3].price_currency}
+                    </p>
+                    <p>Make: ${comp.stock[3].make} </p>
+                    <p>Model: ${comp.stock[3].model} </p>
+                    <p>Type: ${comp.stock[3].type} </p>
+                    <p>Year: ${comp.stock[3].year} </p>
+                    <p>
+                        Mileage: ${comp.stock[3].mileage} ${comp.stock[3].mileage_measure}
+                    </p>
+                    <p>
+                        Axle configuration: ${comp.stock[3].axle_configuration}
+                    </p>
+                    <p>
+                        Power: ${comp.stock[3].power} ${comp.stock[3].power_measure}
+                    </p>
+                    <p>Payload: ${comp.stock[3].payload} </p>
+                    <p>Gross weight: ${comp.stock[3].gross_weight} </p>
+                </div>
+            </div>
+        </div>
+        <div.card>
+            <header.card-header>
+                <p.card-header-title>
+
+                    <a.title.is-6 href=(comp.stock[4].href)>
+                        ${comp.stock[4].title}
+                    </a>
+                </p>
+            </header>
+            <div.card-image>
+
+                <img
+                    src="https://github.com/alexnaidovich/frontend_test_task/blob/master/src/img/5.jpg?raw=true"
+                    alt="Placeholder image"
+                >
+            </div>
+            <div.card-content>
+
+                <div.content>
+                    <p>
+                        Price: ${comp.stock[4].price} ${comp.stock[4].price_currency}
+                    </p>
+                    <p>Make: ${comp.stock[4].make} </p>
+                    <p>Model: ${comp.stock[4].model} </p>
+                    <p>Type: ${comp.stock[4].type} </p>
+                    <p>Year: ${comp.stock[4].year} </p>
+                    <p>
+                        Mileage: ${comp.stock[4].mileage} ${comp.stock[4].mileage_measure}
+                    </p>
+                    <p>
+                        Axle configuration: ${comp.stock[4].axle_configuration}
+                    </p>
+                    <p>
+                        Power: ${comp.stock[4].power} ${comp.stock[4].power_measure}
+                    </p>
+                    <p>Payload: ${comp.stock[4].payload} </p>
+                    <p>Gross weight: ${comp.stock[4].gross_weight} </p>
+                </div>
+            </div>
+        </div>
+        <div.card>
+            <header.card-header>
+                <p.card-header-title>
+
+                    <a.title.is-6 href=(comp.stock[5].href)>
+                        ${comp.stock[5].title}
+                    </a>
+                </p>
+            </header>
+            <div.card-image>
+
+                <img
+                    src="https://github.com/alexnaidovich/frontend_test_task/blob/master/src/img/6.jpg?raw=true"
+                    alt="Placeholder image"
+                >
+            </div>
+            <div.card-content>
+
+                <div.content>
+                    <p>
+                        Price: ${comp.stock[5].price} ${comp.stock[5].price_currency}
+                    </p>
+                    <p>Make: ${comp.stock[5].make} </p>
+                    <p>Model: ${comp.stock[5].model} </p>
+                    <p>Type: ${comp.stock[5].type} </p>
+                    <p>Year: ${comp.stock[5].year} </p>
+                    <p>
+                        Mileage: ${comp.stock[5].mileage} ${comp.stock[5].mileage_measure}
+                    </p>
+                    <p>
+                        Axle configuration: ${comp.stock[5].axle_configuration}
+                    </p>
+                    <p>
+                        Power: ${comp.stock[5].power} ${comp.stock[5].power_measure}
+                    </p>
+                    <p>Payload: ${comp.stock[5].payload} </p>
+                    <p>Gross weight: ${comp.stock[5].gross_weight} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

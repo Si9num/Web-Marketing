@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import "~bulma/bulma";
+
+.card{
+    width:350px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
+.container{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.container.is-fluid{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.breadcrumb{
+    margin-left: 40px;
+}
+.sort{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+.sort p{
+    margin-right: 20px;
+}
+.mainCont{
+    display: flex;
+}
+.search{
+    height: auto;
+    margin-left: 60px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
